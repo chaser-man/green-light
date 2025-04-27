@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Green Light App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-heart"></i>
+                <h1>Green Light</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="support.html" class="active">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="support-hero">
+        <h1>How Can We Help You?</h1>
+        <p>Find answers to common questions and get the support you need</p>
+    </section>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>How accurate is the text analysis?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Green Light uses advanced AI to analyze text conversations. While it's designed to identify common relationship communication patterns, it's not perfect and should be used as a helpful tool rather than the final word. Always trust your instincts and use Green Light as a supplement to your own judgment.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Is my data secure and private?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! Your privacy is our top priority. Screenshots are processed locally on your device, and we don't store your conversations. Our AI analysis happens securely and any data transmitted is encrypted. You can use Green Light with confidence knowing your personal conversations remain private.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Can I analyze conversations from any messaging app?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! Green Light works with screenshots from any messaging platform - iMessage, WhatsApp, Instagram, Tinder, Bumble, or any other app where you have conversations. Just take a screenshot and upload it to Green Light for analysis.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>How often is the AI updated?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We regularly update our AI model to improve accuracy and keep up with evolving communication trends. Updates are automatic when you update the app, so you'll always have the latest analysis capabilities without any extra steps.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Can I delete my data from Green Light?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Green Light doesn't store your conversations on our servers. All processing happens on your device or through secure, temporary API calls. When you delete the app or clear your app data, all information is completely removed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-support">
+        <h2>Still Have Questions?</h2>
+        <p>We're here to help! Send us a message and we'll get back to you as soon as possible.</p>
+        
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                    <option value="technical">Technical Issue</option>
+                    <option value="billing">Billing Question</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+    </section>
+
+    <section class="email-support">
+        <h2>Email Support</h2>
+        <p>For direct assistance, email us at: <a href="mailto:support@greenlightapp.com">support@greenlightapp.com</a></p>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-heart"></i>
+                <h3>Green Light</h3>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="support.html">Support</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Green Light App. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
